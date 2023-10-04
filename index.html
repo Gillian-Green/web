@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <title>Gillian Green</title>
     <style>
         body {
@@ -54,6 +56,57 @@
     opacity: 0.9;
 }
 
+@media (max-width: 768px) {
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Gillian Green", sans-serif;
+        }
+        .content {
+            text-align: center;
+            margin-top: 66px;
+        }
+.title {
+    font-size: 155px;
+    font-weight: bold;
+    display: inline-block;
+    background: linear-gradient(45deg, #FFD700, #FFA07A, #87CEFA, #FF69B4);
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animateText 3s linear infinite;
+}
+
+@keyframes animateText {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+        .design {
+            font-size: 88px;
+            font-weight: bold;
+            margin-top: -266px; 
+        }
+        .services {
+            font-size: 18px;
+            margin-top: -88px; 
+        }
+.email {
+    font-size: 22px;
+    letter-spacing: 2px;
+    opacity: 0.44;
+    transition: opacity 2.2s ease;
+}
+
+.email:hover {
+    opacity: 0.9;
+}
+
+}
     </style>
 </head>
 <body>
